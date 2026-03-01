@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(cmd //c \"echo %PATH%\")",
+      "Bash(tr ';' '\\\\n')",
+      "Bash(powershell.exe -Command \"Get-ChildItem ''C:\\\\Program Files'' -Filter ''node.exe'' -Recurse -ErrorAction SilentlyContinue | Select-Object -First 3 -ExpandProperty FullName\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem ''C:\\\\Users\\\\SvenLüttgens\\\\AppData'' -Filter ''node.exe'' -Recurse -Depth 5 -ErrorAction SilentlyContinue | Select-Object -First 3 -ExpandProperty FullName\")",
+      "Bash(npm test)",
+      "Bash(node --test tests/demo.test.js)"
+    ]
+  }
+}
